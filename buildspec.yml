@@ -1,0 +1,13 @@
+
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Starting application build"
+      - grep -q "Hello AWS CodeBuild!" index.html
+      - echo "Application test successful"
+
+artifacts:
+  files:
+    - index.html
